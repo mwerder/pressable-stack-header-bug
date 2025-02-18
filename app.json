@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "acme",
     "name": "pressable-bug-repro",
     "slug": "pressable-bug-repro",
     "version": "1.0.0",
@@ -13,16 +14,22 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.manuelwerder.pressablebugrepro",
+      "appleTeamId": "5FSLV39QQ9"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.manuelwerder.pressablebugrepro"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
